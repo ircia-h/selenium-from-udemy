@@ -38,8 +38,6 @@ public class PositiveTests {
 
         //
         //verification:
-
-
         //new url
         String expectedURL = "http://the-internet.herokuapp.com/secure";
         String actualURL = driver.getCurrentUrl();
@@ -50,10 +48,12 @@ public class PositiveTests {
         Assert.assertTrue(logoutButton.isDisplayed(),"Logout button isn't displayed");
 
         //successful login message
-        WebElement successfulMsg = driver.findElement(By.cssSelector("div#flash"));
+        //WebElement successfulMsg = driver.findElement(By.cssSelector("div#flash"));
+        WebElement successfulMsg = driver.findElement(By.xpath("//div[@id='flash']"));
         String expectedMsg = "You logged into a secure area!";
         String actualMsg = successfulMsg.getText();
-        Assert.assertEquals(actualMsg, expectedMsg, "Actual message isn't the same as expected");
+        Assert.assertTrue(actualMsg.contains(expectedMsg), "Actual message isn't the same as expected. \n " +
+                "Actual message: " + actualMsg + "\n Expected message: " + expectedMsg);
 
         //Close driver
         driver.quit();

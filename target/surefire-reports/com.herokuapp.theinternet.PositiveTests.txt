@@ -1,17 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: com.herokuapp.theinternet.PositiveTests
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 4.9 s <<< FAILURE! - in com.herokuapp.theinternet.PositiveTests
-com.herokuapp.theinternet.PositiveTests.loginTest  Time elapsed: 4.189 s  <<< FAILURE!
-org.openqa.selenium.NoSuchWindowException: 
-no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=92.0.4515.107)
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'EEFT-748YP73', ip: '10.2.144.18', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.12'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 92.0.4515.107, chrome: {chromedriverVersion: 92.0.4515.43 (8c61b7e2989f2..., userDataDir: C:\Users\IHRYCH~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:62019}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: e18e97957c9ae13d68baac8cf93d49cb
-*** Element info: {Using=id, value=username}
-	at com.herokuapp.theinternet.PositiveTests.loginTest(PositiveTests.java:26)
-
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 9.044 s - in com.herokuapp.theinternet.PositiveTests
